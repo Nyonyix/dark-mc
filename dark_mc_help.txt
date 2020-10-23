@@ -1,0 +1,10 @@
+DARK MC Bot Help:
+%%
+!dark-mc {h|help|Help|HELP}
+To Show this message
+%%
+!dark-mc {tfc|TFC|terrafirmacraft} {ip|IP}
+Shows the current IP and port of the server. May change due to dynamic nature of host.
+%%
+!dark-mc {tfc|TFC|terrafirmacraft} {h|help|Help|HELP}
+Shows troubleshooting steps and potential fixes to problems.
