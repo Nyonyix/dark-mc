@@ -81,6 +81,8 @@ class DiscordBot(discord.Client):
     async def on_ready(self: discord.Client) -> None:
         print(f"{self.user} has connected to Discord")
 
+        await self.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=" !dark-mc h"))
+
     async def on_message(self: discord.Client, message: discord.Message) -> None:
 
             # If the message is the bot it's self, It will ignore the message
@@ -99,6 +101,15 @@ class DiscordBot(discord.Client):
             command, has_extra_words = stripCommand(message.content)
 
             # Checks if message is a base_command and has extra words afterwards
+            
+            try:
+                print(f"\nbase_command: {base_commands[0]} : {base_commands}\ncommand: {command[0]} : {command}")
+            except IndexError:
+                print(f"\nbase_command: {base_commands}\ncommand: {command}\nMessage: {message.content}")
+
+            if len(command) <= 0 or len(base_commands) <= 0:
+                return
+
             if base_commands[0] == command[0]:
                 if has_extra_words == True:
                     sub_commands = ["tfc", "TFC", "Tfc", "Terrafirmacraft", "TERRAFIRMACRAFT", "terrafirmacraft", "h", "help", "Help", "HELP"]

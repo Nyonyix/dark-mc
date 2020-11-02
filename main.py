@@ -9,7 +9,7 @@ def getIP() -> str:
     ip_index_start = int(ip.find(":") + 1)
     ip_index_end = int(ip.find("<", ip_index_start) - 1)
 
-    return ip[ip_index_start : ip_index_end]
+    return ip[ip_index_start : ip_index_end+1]
 
 def main() -> None:
 

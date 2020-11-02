@@ -4,7 +4,7 @@ Modpack:
 We are using the "Terrafirmacraft Reloaded" modpack found here: https://www.curseforge.com/minecraft/modpacks/terrafirmacraft-reloaded
 %%
 TFC Version:
-To join the server, You would also need to update the TFC version. Download from here: https://github.com/TerraFirmaCraft/TerraFirmaCraft/releases - The current used version is "TerraFirmaCraft MC1.12.2-1.7.1.159"
+To join the server, You would also need to update the TFC version. Download from here: https://github.com/TerraFirmaCraft/TerraFirmaCraft/releases/tag/v1.7.5.163
 %%
 Install
 To install the update, Go to the twitch launcher, Click the cog and click on open folder. Put the new TFC jar into the 'mods' folder.
